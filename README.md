@@ -2,21 +2,22 @@
 
 ## Project Overview
 
-This project analyzes supermarket sales data to identify sales trends, customer behavior, product performance, and business insights using Python, Pandas, Matplotlib, and MySQL.
+This project analyzes supermarket sales data to identify sales trends, customer purchasing behavior, product performance, and business insights using Python, Pandas, Matplotlib, and MySQL.
 
-The project also includes a dedicated **Data Visualization** task to transform analyzed data into clear and meaningful visualizations.
+The project includes data analysis, SQL queries, and visualizations to understand supermarket performance and support data-driven business decisions.
 
 ## Objectives
 
-* Analyze overall supermarket sales performance
-* Identify top-performing product lines
-* Compare sales across branches and cities
-* Analyze customer types and payment methods
-* Analyze sales trends by month and day
-* Identify gross income patterns
-* Create clear and meaningful data visualizations
-* Present data-driven insights using charts and graphs
-* Generate business insights using SQL and Python
+* Analyze overall supermarket sales performance.
+* Identify top-performing product lines.
+* Compare sales across branches.
+* Analyze customer types and gender-based purchasing patterns.
+* Examine payment method preferences.
+* Identify monthly sales trends.
+* Analyze gross income and quantity sold.
+* Understand customer ratings across product lines.
+* Create clear and meaningful data visualizations.
+* Generate business insights using Python and SQL.
 
 ## Tools & Technologies
 
@@ -26,15 +27,16 @@ The project also includes a dedicated **Data Visualization** task to transform a
 * MySQL
 * Jupyter Notebook
 * VS Code
-* GitHub
+* Git and GitHub
 
 ## Project Structure
 
 ```text
 supermarket-sales-analysis/
-
+│
 ├── data/
-│   └── supermarket_sales.csv
+│   ├── supermarket_Sales.csv
+│   └── cleaned_supermarket_sales.csv
 │
 ├── notebooks/
 │   ├── supermarket_analysis.ipynb
@@ -51,153 +53,121 @@ supermarket-sales-analysis/
 │   ├── sales_by_payment.png
 │   ├── gross_income_by_product.png
 │   ├── average_rating_by_product.png
-│   ├── quantity_by_product.png
-│   ├── sales_vs_quantity.png
-│   ├── avg_unit_price_by_product_line.png
-│   ├── transaction_sales_distribution.png
-│   ├── sales_by_day_of_week.png
-│   ├── payment_vs_customer_type.png
-│   ├── correlation_heatmap.png
-│   ├── average_sales_by_customer_type.png
-│   ├── average_sales_by_gender.png
-│   ├── quantity_distribution.png
-│   └── sales_vs_gross_income.png
+│   └── quantity_by_product.png
 │
 └── README.md
 ```
+
+*Note: Ensure that the filenames above match your actual project files.*
 
 ## Analysis Performed
 
 ### Python Analysis
 
-* Total sales analysis
-* Sales by product line
-* Sales by branch
-* Sales by gender
-* Sales by customer type
-* Sales by payment method
-* Monthly sales analysis
-* Gross income analysis
-* Customer rating analysis
-* Quantity sold analysis
+The Python analysis includes:
+
+* Total sales analysis.
+* Sales by product line.
+* Sales by branch.
+* Sales by gender.
+* Sales by customer type.
+* Sales by payment method.
+* Monthly sales analysis.
+* Gross income analysis.
+* Customer rating analysis.
+* Quantity sold analysis.
 
 ### SQL Analysis
 
-* Total sales
-* Sales by product line and branch
-* Sales by gender and customer type
-* Sales by payment method
-* Monthly and daily sales
-* Top 5 product lines
-* Top 10 transactions
-* Highest gross income transaction
-* Sales and gross income by branch
+The SQL analysis includes:
 
-## Data Visualization
+* Total sales calculation.
+* Sales by product line.
+* Sales by branch.
+* Sales by gender and customer type.
+* Sales by payment method.
+* Monthly and daily sales analysis.
+* Top five product lines.
+* Top ten transactions.
+* Highest gross income transaction.
+* Sales and gross income by branch.
 
-The Data Visualization task focuses on presenting supermarket sales data through clear and meaningful charts using Python and Matplotlib.
+## Data Visualizations
 
-### Visualizations Created
+The project uses Matplotlib to present sales patterns and business performance through eight visualizations.
 
-1. Sales vs Quantity
-2. Average Unit Price by Product Line
-3. Distribution of Transaction Sales
-4. Total Sales by Day of the Week
-5. Sales by Payment Method and Customer Type
-6. Correlation Between Numerical Variables
-7. Average Sales by Customer Type
-8. Average Sales by Gender
-9. Distribution of Quantity per Transaction
-10. Sales vs Gross Income
+### 1. Monthly Sales Trend
 
-## Key Insights
-
-* Branch C generated the highest total sales.
-* Food and beverages generated the highest total sales among product lines.
-* Female customers generated higher total sales than male customers.
-* Member customers generated slightly higher total sales than normal customers.
-* Cash was the highest-used payment method by total sales.
-* January recorded the highest monthly sales.
-* Electronic accessories had the highest quantity sold.
-* Food and beverages generated the highest gross income.
-
-## Visualizations
-
-### Monthly Sales Trend
+Displays total sales across different months to identify monthly performance patterns.
 
 ![Monthly Sales Trend](images/monthly_sales_trend.png)
 
-### Sales by Product Line
+### 2. Sales by Product Line
+
+Compares total sales across different product categories.
 
 ![Sales by Product Line](images/sales_by_product_line.png)
 
-### Sales by Branch
+### 3. Sales by Branch
+
+Compares total sales generated by different supermarket branches.
 
 ![Sales by Branch](images/sales_by_branch.png)
 
-### Sales by Gender
+### 4. Sales by Gender
+
+Compares total sales generated by male and female customers.
 
 ![Sales by Gender](images/sales_by_gender.png)
 
-### Sales by Payment Method
+### 5. Sales by Payment Method
 
-![Sales by Payment](images/sales_by_payment.png)
+Shows the sales contribution of different payment methods.
 
-### Gross Income by Product Line
+![Sales by Payment Method](images/sales_by_payment.png)
+
+### 6. Gross Income by Product Line
+
+Compares gross income generated by different product categories.
 
 ![Gross Income by Product Line](images/gross_income_by_product.png)
 
-### Average Customer Rating by Product Line
+### 7. Average Customer Rating by Product Line
 
-![Average Customer Rating](images/average_rating_by_product.png)
+Compares average customer ratings across product categories.
 
-### Quantity Sold by Product Line
+![Average Customer Rating by Product Line](images/average_rating_by_product.png)
 
-![Quantity Sold](images/quantity_by_product.png)
+### 8. Quantity Sold by Product Line
 
-### Sales vs Quantity
+Shows the quantity sold across different product categories.
 
-![Sales vs Quantity](images/sales_vs_quantity.png)
+![Quantity Sold by Product Line](images/quantity_by_product.png)
 
-### Average Unit Price by Product Line
+## Key Business Insights
 
-![Average Unit Price](images/avg_unit_price_by_product_line.png)
+Based on the results of the analysis:
 
-### Distribution of Transaction Sales
+* **Branch performance:** Branch C generated the highest total sales.
+* **Product performance:** Food and beverages generated the highest total sales among product lines.
+* **Customer gender:** Female customers generated higher total sales than male customers.
+* **Customer type:** Member customers generated slightly higher total sales than Normal customers.
+* **Payment method:** Cash generated the highest total sales among payment methods.
+* **Monthly performance:** January recorded the highest monthly sales.
+* **Quantity sold:** Electronic accessories had the highest quantity sold.
+* **Gross income:** Food and beverages generated the highest gross income.
 
-![Transaction Sales Distribution](images/transaction_sales_distribution.png)
-
-### Total Sales by Day of the Week
-
-![Sales by Day of the Week](images/sales_by_day_of_week.png)
-
-### Sales by Payment Method and Customer Type
-
-![Payment vs Customer Type](images/payment_vs_customer_type.png)
-
-### Correlation Heatmap
-
-![Correlation Heatmap](images/correlation_heatmap.png)
-
-### Average Sales by Customer Type
-
-![Average Sales by Customer Type](images/average_sales_by_customer_type.png)
-
-### Average Sales by Gender
-
-![Average Sales by Gender](images/average_sales_by_gender.png)
-
-### Distribution of Quantity per Transaction
-
-![Quantity Distribution](images/quantity_distribution.png)
-
-### Sales vs Gross Income
-
-![Sales vs Gross Income](images/sales_vs_gross_income.png)
+*Verify these findings against your latest notebook results before publishing the README.*
 
 ## How to Run the Project
 
+### Prerequisites
+
+Install Python and the required libraries. MySQL is required if you want to execute the SQL analysis.
+
 ### 1. Clone the Repository
+
+Replace the placeholder with your actual GitHub repository URL.
 
 ```bash
 git clone <your-github-repository-url>
@@ -209,38 +179,65 @@ Open the `supermarket-sales-analysis` folder in VS Code.
 
 ### 3. Install Required Libraries
 
+Run the following command in the terminal:
+
 ```bash
-pip install pandas matplotlib numpy
+pip install pandas matplotlib numpy jupyter
 ```
 
 ### 4. Run the Python Analysis
 
-Open the notebooks inside the `notebooks/` folder and run the cells.
+Open the `notebooks/` folder and run the notebooks in Jupyter Notebook or VS Code.
 
-* `supermarket_analysis.ipynb` — Python sales analysis
-* `task3_data_visualization.ipynb` — Data Visualization
+* `supermarket_analysis.ipynb` — Main supermarket sales analysis.
+* `task3_data_visualization.ipynb` — Additional data visualization analysis.
+
+Run the cells in order and ensure that the dataset paths are correct.
 
 ### 5. Run the SQL Analysis
 
-Open `sql/analysis.sql` in MySQL Workbench and execute the queries using the `supermarket_sales` database.
+1. Open MySQL Workbench.
+2. Create or select the appropriate database.
+3. Import the supermarket dataset into a database table.
+4. Open `sql/analysis.sql`.
+5. Execute the SQL queries.
+
+Ensure that the database name and table name match those used in your SQL file.
 
 ## Project Results
 
-The analysis identified important patterns in supermarket sales, including:
+This project demonstrates the use of Python and SQL to analyze supermarket sales data and communicate findings through visualizations.
 
-* Monthly sales trends
-* Product line performance
-* Branch-wise sales performance
-* Customer purchasing patterns
-* Payment method usage
-* Gross income performance
-* Quantity sold by product line
-* Top-performing transactions
-* Relationships between numerical variables
-* Sales patterns across customer segments
+The analysis provides insights into:
+
+* Overall sales performance.
+* Monthly sales trends.
+* Product category performance.
+* Branch-wise sales.
+* Customer purchasing behavior.
+* Payment method preferences.
+* Gross income.
+* Quantity sold.
+* Customer ratings.
+
+These insights can help businesses understand sales performance and make informed decisions.
+
+## Skills Demonstrated
+
+* Python programming.
+* Data analysis using Pandas.
+* Numerical operations using NumPy.
+* Data visualization using Matplotlib.
+* SQL querying and aggregation.
+* Exploratory data analysis.
+* Business insight generation.
+* Jupyter Notebook.
+* Git and GitHub.
 
 ## Author
 
 **Salmon Raju**
 
 CSE (AI & ML) Student | Aspiring Data Analyst
+
+**Technical Skills:** Python | SQL | Excel | Power BI | Pandas | NumPy | Matplotlib
